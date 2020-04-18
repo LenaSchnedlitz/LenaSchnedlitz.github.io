@@ -1,0 +1,134 @@
+@media (prefers-color-scheme: dark) {
+
+  html {
+    background: var(--gray-9);
+  }
+
+  body {
+    color: var(--gray-1);
+  }
+
+  .link::after {
+    background-color: var(--primary-color-6);
+  }
+
+  .link:hover:after {
+    background-color: var(--primary-color-8);
+  }
+
+  .emph::after {
+    background-color: var(--tertiary-color-8);
+  }
+
+  svg.icon {
+    stroke: var(--gray-1);
+  }
+
+
+  .dot {
+    background: var(--gray-8);
+  }
+
+  ::-moz-selection,
+  ::selection {
+    background: var(--secondary-color-6);
+    color: var(--gray-9);
+  }
+
+  pre {
+    background: #f6f6f6;
+  }
+
+  /* FOLLOW ME ************************************************************************************/
+  @media (min-width: 800px) {
+    #follow-me a:hover {
+      color: var(--primary-color-3);
+    }
+
+    #follow-me a:hover svg {
+      stroke: var(--primary-color-3);
+    }
+
+    #follow-me a:active {
+      color: var(--primary-color);
+    }
+
+    #follow-me a:active svg {
+      stroke: var(--primary-color);
+    }
+  }
+
+
+  /* HLJS *****************************************************************************************/
+  .hljs {
+    color: var(--gray-9);
+  }
+
+  .hljs-comment,
+  .hljs-quote {
+    color: var(--gray-5);
+  }
+
+  .hljs-keyword,
+  .hljs-selector-tag,
+  .hljs-subst {
+    color: var(--gray-9);
+  }
+
+  .hljs-number,
+  .hljs-literal,
+  .hljs-variable,
+  .hljs-template-variable,
+  .hljs-tag .hljs-attr {
+    color: var(--tertiary-color-8);
+  }
+
+  .hljs-string,
+  .hljs-doctag {
+    color: var(--gray-7);
+  }
+
+  .hljs-title,
+  .hljs-section,
+  .hljs-selector-id {
+    color: var(--primary-color-6);
+  }
+
+  .hljs-type,
+  .hljs-class .hljs-title {
+    color: var(--primary-color-8);
+  }
+
+  .hljs-tag,
+  .hljs-name,
+  .hljs-attribute {
+    color: var(--primary-color-6);
+  }
+
+  .hljs-regexp,
+  .hljs-link {
+    color: var(--secondary-color-6);
+  }
+
+  .hljs-symbol,
+  .hljs-bullet {
+    color: var(--primary-color-8);
+  }
+
+  .hljs-built_in,
+  .hljs-builtin-name {
+    color: var(--gray-5);
+  }
+
+  .hljs-meta {
+    color: var(--gray-5);
+  }
+
+  .hljs-deletion {
+    background: #fdd;
+  }
+
+  .hljs-addition {
+    background: #dfd;
+  }
+}
