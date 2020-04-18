@@ -81,7 +81,7 @@ html {
 body {
   margin: 0;
   font-family: var(--serif);
-  font-size: 14px;
+  font-size: 16px;
   color: var(--gray-9);
 }
 
@@ -95,20 +95,20 @@ h1 {
 }
 
 h2 {
-  margin: 20px 0 14px 4px;
-  font-size: 14px;
+  margin: 23px 0 16px 4px;
+  font-size: 16px;
   font-weight: bold;
   font-style: italic;
 }
 
 p {
-  margin: 0 -1rem 1rem 1rem;
-  line-height: 18px;
+  margin: 0 -1rem 0.5rem 1rem;
+  line-height: 24px;
 }
 
 @media (min-width: 800px) {
   p {
-    margin: 0 -20px 1rem 20px;
+    margin: 0 -20px 0.5rem 20px;
   }
 }
 
@@ -125,7 +125,7 @@ a {
 .link::after {
   position: absolute;
   content: '';
-  bottom: 1px;
+  bottom: 2px;
   left: -1px;
   display: block;
   height: 4px;
@@ -150,7 +150,7 @@ a {
   content: '';
   bottom: 4px;
   display: block;
-  height: 6px;
+  height: 7px;
   width: 100%;
   background-color: var(--secondary-color-3);
   border-radius: 4px;
