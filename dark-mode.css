@@ -36,7 +36,7 @@
   }
 
   pre {
-    background: #f6f6f6;
+    background: #181818;
   }
 
   /* FOLLOW ME ************************************************************************************/
@@ -61,18 +61,18 @@
 
   /* HLJS *****************************************************************************************/
   .hljs {
-    color: var(--gray-9);
+    color: var(--gray-1);
   }
 
   .hljs-comment,
   .hljs-quote {
-    color: var(--gray-5);
+    color: var(--gray-6);
   }
 
   .hljs-keyword,
   .hljs-selector-tag,
   .hljs-subst {
-    color: var(--gray-9);
+    color: var(--gray-1);
   }
 
   .hljs-number,
@@ -80,7 +80,7 @@
   .hljs-variable,
   .hljs-template-variable,
   .hljs-tag .hljs-attr {
-    color: var(--tertiary-color-8);
+    color: var(--secondary-color-3);
   }
 
   .hljs-string,
@@ -91,37 +91,37 @@
   .hljs-title,
   .hljs-section,
   .hljs-selector-id {
-    color: var(--primary-color-6);
+    color: var(--primary-color);
   }
 
   .hljs-type,
   .hljs-class .hljs-title {
-    color: var(--primary-color-8);
+    color: var(--primary-color-3);
   }
 
   .hljs-tag,
   .hljs-name,
   .hljs-attribute {
-    color: var(--primary-color-6);
+    color: var(--primary-color);
   }
 
   .hljs-regexp,
   .hljs-link {
-    color: var(--secondary-color-6);
+    color: var(--tertiary-color);
   }
 
   .hljs-symbol,
   .hljs-bullet {
-    color: var(--primary-color-8);
+    color: var(--primary-color-3);
   }
 
   .hljs-built_in,
   .hljs-builtin-name {
-    color: var(--gray-5);
+    color: var(--gray-6);
   }
 
   .hljs-meta {
-    color: var(--gray-5);
+    color: var(--gray-6);
   }
 
   .hljs-deletion {
