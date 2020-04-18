@@ -1,0 +1,1 @@
+{"html":"<p>Nothing here yet - Will be replaced by <em>real</em> content!</p>\n<pre><code>def foo:\n    print('hello world!')\n<span class=\"hljs-addition\">+   pass</span>\n    print('something else')\n<span class=\"hljs-deletion\">-   break</span></code></pre>","slug":"2020-03-01-placeholder-2","title":"Placeholder 2","teaser":"Contains code"}

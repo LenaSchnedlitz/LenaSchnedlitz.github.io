@@ -125,10 +125,10 @@
   }
 
   .hljs-deletion {
-    background: #fdd;
+    background: #291a17;
   }
 
   .hljs-addition {
-    background: #dfd;
+    background: #152422;
   }
 }
