@@ -149,6 +149,7 @@ a {
 .emph::after {
   position: absolute;
   content: '';
+  left: 0;
   bottom: 4px;
   display: block;
   height: 7px;
