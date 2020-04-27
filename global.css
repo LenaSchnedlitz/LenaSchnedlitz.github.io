@@ -293,10 +293,12 @@ code {
 
 .portfolio-card.primary-light {
   background: var(--primary-color-2);
+  color: var(--gray-9);
 }
 
 .portfolio-card.primary {
   background: var(--primary-color);
+  color: var(--gray-9);
 }
 
 .portfolio-card.primary-dark {
@@ -306,14 +308,17 @@ code {
 
 .portfolio-card.secondary {
   background: var(--secondary-color);
+  color: var(--gray-9);
 }
 
 .portfolio-card.tertiary {
   background: var(--tertiary-color);
+  color: var(--gray-9);
 }
 
 .portfolio-card.gray-light {
   background: var(--gray-3);
+  color: var(--gray-9);
 }
 
 .portfolio-card.gray-dark {
