@@ -280,6 +280,48 @@ code {
 }
 
 
+/* PORTFOLIO CARDS ********************************************************************************/
+
+.portfolio-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: 5px 10px 25px 0 rgba(0,0,0,0.1);
+}
+
+.portfolio-card.primary-light {
+  background: var(--primary-color-2);
+}
+
+.portfolio-card.primary {
+  background: var(--primary-color);
+}
+
+.portfolio-card.primary-dark {
+  background: var(--primary-color-8);
+  color: var(--gray-1);
+}
+
+.portfolio-card.secondary {
+  background: var(--secondary-color);
+}
+
+.portfolio-card.tertiary {
+  background: var(--tertiary-color);
+}
+
+.portfolio-card.gray-light {
+  background: var(--gray-3);
+}
+
+.portfolio-card.gray-dark {
+  background: var(--gray-7);
+  color: var(--gray-1);
+}
+
+
 /* HLJS *******************************************************************************************/
 
 .hljs {
