@@ -159,6 +159,14 @@ a {
   z-index: -1;
 }
 
+.meta {
+  margin-right: 0.1rem;
+  font-family: var(--sans-serif);
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
 svg.icon {
   width: 24px;
   height: 24px;
@@ -173,6 +181,17 @@ svg.icon-small {
   width: 1rem;
   height: 1rem;
   margin-top: -0.1rem;
+}
+
+svg.icon-inline {
+  width: 1rem;
+  height: 1rem;
+  margin-bottom: -0.1rem;
+}
+
+.link .icon-inline {
+  margin-left: -0.1rem;
+  margin-right: -0.1rem;
 }
 
 
@@ -209,6 +228,53 @@ code {
     padding: 1rem 20px 1.5rem;
   }
 }
+
+figure {
+  margin: 2rem 0;
+  position: relative;
+}
+
+figcaption {
+  position: absolute;
+  left: -0.8rem;
+  bottom: -0.5rem;
+  transform: rotate(-90deg);
+  transform-origin: top left;
+
+  font-family: var(--sans-serif);
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+figcaption > strong {
+  font-weight: 800;
+}
+
+figure > img {
+  max-width: 100%;
+}
+
+@media (min-width: 800px) {
+  figure.left {
+    width: 70%;
+    margin-top: 3rem;
+  }
+
+  figure.center {
+    width: 70%;
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  figure.right {
+    width: 70%;
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: -40px;
+  }
+}
+
 
 /* FOLLOW ME **************************************************************************************/
 
@@ -288,7 +354,7 @@ code {
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
-  box-shadow: 5px 10px 25px 0 rgba(0,0,0,0.1);
+  box-shadow: 5px 10px 25px 0 rgba(0, 0, 0, 0.1);
 }
 
 .portfolio-card.primary-light {
