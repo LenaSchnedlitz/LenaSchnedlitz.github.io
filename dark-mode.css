@@ -63,6 +63,20 @@
     box-shadow: 5px 10px 25px 0 rgba(0, 0, 0, 1);
   }
 
+  .portfolio-card.secondary {
+    background: var(--secondary-color-3);
+    color: var(--gray-9);
+  }
+
+  .portfolio-card.gray-dark {
+    background: var(--gray-8);
+    color: var(--gray-1);
+  }
+
+  img {
+    filter: grayscale(16%);
+  }
+
 
   /* HLJS *****************************************************************************************/
   .hljs {
