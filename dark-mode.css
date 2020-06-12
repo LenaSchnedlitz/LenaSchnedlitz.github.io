@@ -1,6 +1,10 @@
 @media (prefers-color-scheme: dark) {
 
   html {
+    --primary-color-7: #ae3561;
+    --primary-color-9: #6e384c;
+    --tertiary-color-9: #2b4954;
+
     background: var(--gray-9);
   }
 
@@ -9,15 +13,15 @@
   }
 
   .link::after {
-    background-color: var(--primary-color-6);
+    background-color: var(--primary-color-7);
   }
 
   .link:hover:after {
-    background-color: var(--primary-color-8);
+    background-color: var(--primary-color-9);
   }
 
   .emph::after {
-    background-color: var(--tertiary-color-8);
+    background-color: var(--tertiary-color-9);
   }
 
   svg.icon {
