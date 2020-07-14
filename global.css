@@ -63,6 +63,7 @@ html {
   --secondary-color-3: #fbe39e;
   --secondary-color-6: #cba539;
   --tertiary-color: #33bbee;
+  --tertiary-color-6: #309dc6;
   --tertiary-color-8: #2c6479;
   --gray-1: #fefefe;
   --gray-2: #dfdfdf;
@@ -120,26 +121,18 @@ a {
 }
 
 .link {
-  position: relative;
+  color: var(--primary-color-6);
+
+  /* Prettier underline, adapted from https://edwardtufte.github.io/tufte-css/ */
+  text-shadow: 0.03em 0 var(--gray-1), -0.03em 0 var(--gray-1), 0 0.03em var(--gray-1), 0 -0.03em var(--gray-1), 0.06em 0 var(--gray-1), -0.06em 0 var(--gray-1), 0.09em 0 var(--gray-1), -0.09em 0 var(--gray-1), 0.12em 0 var(--gray-1), -0.12em 0 var(--gray-1), 0.15em 0 var(--gray-1), -0.15em 0 var(--gray-1);
+  background-image: linear-gradient(var(--gray-1), var(--gray-1)), linear-gradient(var(--gray-1), var(--gray-1)), linear-gradient(var(--gray-2), var(--gray-2));
+  background-position: 0 99%, 100% 99%, 0 99%;
+  background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+  background-repeat: no-repeat, no-repeat, repeat-x;
 }
 
-.link::after {
-  position: absolute;
-  content: '';
-  bottom: 2px;
-  left: -1px;
-  display: block;
-  height: 4px;
-  width: calc(100% + 2px);
-  background-color: var(--primary-color);
-  border-radius: 4px;
-  z-index: -1;
-  transition: all ease-out 300ms;
-}
-
-.link:hover:after {
-  height: 8px;
-  background-color: var(--primary-color-3);
+.link:hover {
+  background-image: linear-gradient(var(--gray-1), var(--gray-1)), linear-gradient(var(--gray-1), var(--gray-1)), linear-gradient(var(--primary-color-6), var(--primary-color-6));
 }
 
 .emph {
@@ -160,11 +153,20 @@ a {
 }
 
 .meta {
+  color: var(--gray-9);
   margin-right: 0.1rem;
   font-family: var(--sans-serif);
   font-weight: 600;
   font-size: 12px;
   text-transform: uppercase;
+}
+
+.meta:hover {
+  color: var(--primary-color);
+}
+
+.meta:hover svg.icon {
+  stroke: var(--primary-color);
 }
 
 svg.icon {
@@ -203,10 +205,14 @@ svg.icon-inline {
   background: var(--gray-3);
 }
 
-::-moz-selection,
 ::selection {
-  background: var(--tertiary-color);
+  background-color: var(--tertiary-color-6);
   color: var(--gray-1);
+}
+
+a::selection {
+  /* Fixes selection style of links with prettier underline */
+  text-shadow: none;
 }
 
 pre {
