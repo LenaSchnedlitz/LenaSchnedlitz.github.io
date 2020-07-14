@@ -28,6 +28,12 @@
     background-color: var(--tertiary-color-9);
   }
 
+  .emph:hover::after {
+    background-color: var(--tertiary-color-9);
+    height: 1rem;
+    bottom: 0;
+  }
+
   .meta {
     color: var(--gray-1);
   }
