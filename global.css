@@ -204,6 +204,11 @@ svg.icon-inline {
   margin-right: -0.1rem;
 }
 
+.meta .icon-inline {
+  width: 0.9rem;
+  height: 0.9rem;
+}
+
 
 .dot {
   height: 4px;
